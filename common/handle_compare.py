@@ -6,7 +6,7 @@
 # @Software: PyCharm
 # @python version: 3.7
 
-from S_产业数据云2.common.handler_log import my_log
+from common.handler_log import my_log
 
 
 

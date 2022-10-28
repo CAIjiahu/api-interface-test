@@ -2,7 +2,7 @@
 import requests
 import json
 import os
-from S_接口耗时检测.common.handle_conf import conf
+from common.handle_conf import conf
 
 path = os.getcwd()+"\\"
 

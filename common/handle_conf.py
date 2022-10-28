@@ -8,7 +8,7 @@
 
 import os
 from configparser import ConfigParser
-from S_接口耗时检测.common.handle_path import CONF_DIR
+from common.handle_path import CONF_DIR
 
 
 class Config(ConfigParser):

@@ -12,8 +12,8 @@
 
 import logging
 import os
-from S_产业数据云2.common.handle_conf import conf
-from S_产业数据云2.common.handle_path import LOG_DIR
+from common.handle_conf import conf
+from common.handle_path import LOG_DIR
 
 
 def create_log(name='mylog.log', level='DEBUG', filename='log.log', sh_level='DEBUG', fh_level='DEBUG'):

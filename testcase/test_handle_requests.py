@@ -8,14 +8,13 @@
 
 import json
 import os
-
 import requests
 import unittest
 from unittestreport import ddt,list_data
 
-from S_接口耗时检测.common.handle_excel import HandleExcel
-from S_接口耗时检测.common.handle_path import DATA_DIR
-from S_接口耗时检测.common.handler_log import my_log
+from common.handle_excel import HandleExcel
+from common.handle_path import DATA_DIR
+from common.handler_log import my_log
 
 @ddt
 class interface_request(unittest.TestCase):
@@ -24,7 +23,7 @@ class interface_request(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        from S_接口耗时检测.common.handel_login import cookies
+        from common.handel_login import cookies
         cls.Cookie = cookies
 
     def comm_score_judgment(self,score,row,col):
