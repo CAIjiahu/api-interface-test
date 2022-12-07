@@ -989,3 +989,9 @@
 2022-09-15 11:34:45,023 - [handle_compare.py -->line:21] - ERROR:【62d78566f157f3806a6e8d6d】的value值不同，分别是380和380 
 2022-09-15 11:34:45,023 - [handle_compare.py -->line:21] - ERROR:【62d78566f157f3806a6e8d82】的value值不同，分别是434和434 
 2022-09-15 11:34:45,023 - [handle_compare.py -->line:21] - ERROR:【62d78566f157f3806a6e8d95】的value值不同，分别是12718和12718 
+2022-12-07 17:36:56,817 - [test_handle_requests.py -->line:74] - ERROR:接口--【产业分析_产业链层级】第【0】次执行失败 
+2022-12-07 17:36:56,986 - [test_handle_requests.py -->line:74] - ERROR:接口--【产业分析_产业链层级】第【1】次执行失败 
+2022-12-07 17:36:57,142 - [test_handle_requests.py -->line:74] - ERROR:接口--【产业分析_产业链层级】第【2】次执行失败 
+2022-12-07 17:36:57,498 - [test_handle_requests.py -->line:74] - ERROR:接口--【产业分析_产业链内的地区企业数量】第【0】次执行失败 
+2022-12-07 17:36:57,643 - [test_handle_requests.py -->line:74] - ERROR:接口--【产业分析_产业链内的地区企业数量】第【1】次执行失败 
+2022-12-07 17:36:57,804 - [test_handle_requests.py -->line:74] - ERROR:接口--【产业分析_产业链内的地区企业数量】第【2】次执行失败 
