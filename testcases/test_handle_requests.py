@@ -64,8 +64,6 @@ class interface_request(unittest.TestCase):
                     # else:
                     #     my_log.error("接口--【{}】第【{}】次执行失败".format(item["title"], i))
                     try:
-                        print(res.status_code)
-                        print(item["expected"])
                         self.assertEqual(res.status_code,item["expected"])
 
                     except AssertionError as e:
