@@ -29,16 +29,16 @@ class interface_request(unittest.TestCase):
     def comm_score_judgment(self,score,row,col):
         print(score)
         if  score< 200:
-            print("A")
+            # print("A")
             self.excel.write_data(row, col, "A")
         elif 200<=score < 500:
-            print("B")
+            # print("B")
             self.excel.write_data(row, col, "B")
         elif 500 <= score < 1000:
-            print("C")
+            # print("C")
             self.excel.write_data(row, col, "C")
         elif 1000 <= score:
-            print("D")
+            # print("D")
             self.excel.write_data(row, col, "D")
 
     @list_data(case)
@@ -59,10 +59,19 @@ class interface_request(unittest.TestCase):
                     res = requests.post(item["host"]+item["api"], data=eval(item["data"]), headers=headers)
 
                     time += res.elapsed.total_seconds()
-                    if res.status_code == 200:
-                        code = 200
-                    else:
+                    # if res.status_code == 200:
+                    #     code = 200
+                    # else:
+                    #     my_log.error("接口--【{}】第【{}】次执行失败".format(item["title"], i))
+                    try:
+                        print(res.status_code)
+                        print(item["expected"])
+                        self.assertEqual(res.status_code,item["expected"])
+
+                    except AssertionError as e:
                         my_log.error("接口--【{}】第【{}】次执行失败".format(item["title"], i))
+
+
 
                 elif item["request_mode"] == "get":
                     res = requests.get(item["host"]+item["api"],params=eval(item["data"]), headers=headers)
