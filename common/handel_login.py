@@ -62,3 +62,6 @@ def login_company(key='test',value='url'):
 cookies = login_company()
 # print(cookies)
 
+if __name__ == '__main__':
+    test_seconds = conf.get('test_num','num')
+    print(test_seconds)

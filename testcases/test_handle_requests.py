@@ -15,6 +15,7 @@ from unittestreport import ddt,list_data
 from common.handle_excel import HandleExcel
 from common.handle_path import DATA_DIR
 from common.handler_log import my_log
+from common.handle_conf import conf
 
 @ddt
 class interface_request(unittest.TestCase):
@@ -28,7 +29,7 @@ class interface_request(unittest.TestCase):
 
     def comm_score_judgment(self,score,row,col):
         print(score)
-        if  score< 200:
+        if score< 200:
             # print("A")
             self.excel.write_data(row, col, "A")
         elif 200<=score < 500:
@@ -45,6 +46,7 @@ class interface_request(unittest.TestCase):
     def test_requests_post(self,item):
 
         time,code = 0,0
+        timeseconds = int(conf.get("test_num",'num'))
 
         headers = {
             "Referer": item["host"]+item["api"],
@@ -54,7 +56,7 @@ class interface_request(unittest.TestCase):
         if item["case_id"] == 1 or item["case_id"] == 2 or item["case_id"] == 3:
             self.skipTest('skip')
         else:
-            for i in range(3):
+            for i in range(timeseconds):
                 if item["request_mode"] == "post":
                     res = requests.post(item["host"]+item["api"], data=eval(item["data"]), headers=headers)
 
@@ -82,9 +84,9 @@ class interface_request(unittest.TestCase):
 
             #  将接口状态及返回时间写入文件
             self.excel.write_data(item["case_id"] + 1, 3, code)
-            self.excel.write_data(item["case_id"]+1,4,("%.2f"%(time/3)))
+            self.excel.write_data(item["case_id"]+1,4,("%.2f"%(time/timeseconds)))
             #  打分，并写入文件
-            self.comm_score_judgment(time/3*1000,item["case_id"] + 1, 5)
+            self.comm_score_judgment(time/timeseconds*1000,item["case_id"] + 1, 5)
 
 
 
