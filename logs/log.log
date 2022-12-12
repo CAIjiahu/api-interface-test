@@ -1019,3 +1019,13 @@
 2022-12-08 11:13:48,906 - [test_handle_requests.py -->line:83] - ERROR:接口--【产业分析_产业链内的地区企业数量】第【0】次执行失败 
 2022-12-08 11:13:49,051 - [test_handle_requests.py -->line:83] - ERROR:接口--【产业分析_产业链内的地区企业数量】第【1】次执行失败 
 2022-12-08 11:13:49,207 - [test_handle_requests.py -->line:83] - ERROR:接口--【产业分析_产业链内的地区企业数量】第【2】次执行失败 
+2022-12-12 11:47:29,588 - [test_handle_requests.py -->line:83] - ERROR:接口--【产业分析_产业链层级】第【0】次执行失败 
+2022-12-12 11:47:29,789 - [test_handle_requests.py -->line:83] - ERROR:接口--【产业分析_产业链层级】第【1】次执行失败 
+2022-12-12 11:47:29,975 - [test_handle_requests.py -->line:83] - ERROR:接口--【产业分析_产业链层级】第【2】次执行失败 
+2022-12-12 11:47:30,156 - [test_handle_requests.py -->line:83] - ERROR:接口--【产业分析_产业链层级】第【3】次执行失败 
+2022-12-12 11:47:30,324 - [test_handle_requests.py -->line:83] - ERROR:接口--【产业分析_产业链层级】第【4】次执行失败 
+2022-12-12 11:47:31,018 - [test_handle_requests.py -->line:83] - ERROR:接口--【产业分析_产业链内的地区企业数量】第【0】次执行失败 
+2022-12-12 11:47:31,184 - [test_handle_requests.py -->line:83] - ERROR:接口--【产业分析_产业链内的地区企业数量】第【1】次执行失败 
+2022-12-12 11:47:31,350 - [test_handle_requests.py -->line:83] - ERROR:接口--【产业分析_产业链内的地区企业数量】第【2】次执行失败 
+2022-12-12 11:47:31,525 - [test_handle_requests.py -->line:83] - ERROR:接口--【产业分析_产业链内的地区企业数量】第【3】次执行失败 
+2022-12-12 11:47:31,689 - [test_handle_requests.py -->line:83] - ERROR:接口--【产业分析_产业链内的地区企业数量】第【4】次执行失败 
